@@ -43,3 +43,12 @@ Data could be used for sentiment analysis. Also the metadata of reviewers can be
 
 * Pictures : No. of pictures posted with review
 
+## Business Problem Analysis:
+
+The various regional and traditional foods that are indigenous to the Indian subcontinent make up Indian cuisine. You may discover something unique to adore in every state. Aside from the traditional foods of North and South India, many other civilizations have had a significant influence on and contributed to the development of culinary culture. It would be an understatement to say that Indians like eating. People in India like celebrating even the smallest milestones in their life with delicious food and a welcoming environment. Zomato is here to connect customers and restaurants. Zomato is an online directory of Indian restaurants that offers menus, user ratings, and the option of meal delivery. They essentially take orders on behalf of the restaurant and arrange for delivery of the meal to your door.
+
+The problem statement here has two datasets for us to work on:
+* Zomato Restaurant Names and Metadata
+* Zomato Restaurant Reviews
+
+Zomato must examine its datasets and make informed strategic decisions if it wants to ensure its success. In order to assist clients identify the finest restaurants in their city, according to their preferences, and to analyse the areas where they are falling short, the issue statement requests us to group the restaurants. This will aid Zomato in developing a strong consumer recommendation system. Use the restaurant prices and cuisines to do a cost-benefit analysis. It is crucial to do sentiment research to learn how customers truly feel about a certain restaurant in order to identify areas that require improvement. to locate the industry critics and, in particular, to work on their assessments in order to develop a reputation that is praiseworthy.
