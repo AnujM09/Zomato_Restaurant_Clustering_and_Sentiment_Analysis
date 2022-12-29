@@ -52,3 +52,29 @@ The problem statement here has two datasets for us to work on:
 * Zomato Restaurant Reviews
 
 Zomato must examine its datasets and make informed strategic decisions if it wants to ensure its success. In order to assist clients identify the finest restaurants in their city, according to their preferences, and to analyse the areas where they are falling short, the issue statement requests us to group the restaurants. This will aid Zomato in developing a strong consumer recommendation system. Use the restaurant prices and cuisines to do a cost-benefit analysis. It is crucial to do sentiment research to learn how customers truly feel about a certain restaurant in order to identify areas that require improvement. to locate the industry critics and, in particular, to work on their assessments in order to develop a reputation that is praiseworthy.
+
+## Data Cleaning and Pre-Processing:
+
+Due to the existence of undesirable data, such as duplicate values, null values, and outliers, the raw data received in the data collection may not be immediately accepted for analysis. Before moving on to further in-depth examination, we must deal with them first.
+
+**Removing Duplicates:** There are roughly 105 entries in the "Zomato Restaurant names and Metadata" dataset that was given for this investigation. They are all original and have never been seen before. The "Zomato Restaurant Reviews" dataset, which is also offered, has 10,000 entries, all of which are distinct and have never been replicated. Before modeling, it is preferable to look for duplicate values.
+
+**Handling null/missing values:** It is also conceivable that certain records in the supplied data set lack information for some or all of the characteristics; in this case, we must either delete such records or find alternatives to fill in the null values. More over half of the collections column entries in the "Zomato Restaurant names and metadata" dataset are null values. Therefore, we won't be using that column in our analysis. Additionally, a small number of columns in the "Zomato Restaurant Reviews" dataset have null values.
+
+**Feature Handling:** In order to get the necessary information from the data, we can change some of the characteristics in accordance with our needs. As an illustration, we separated the "Time" column from the dataset of "Zomato Restaurant Reviews" to extract three additional new characteristics named the "year," "month," and "hour" columns. Furthermore, we divided the "MetaData" column into the "Reviews" and "Followers" columns.
+
+## Text Preprocessing:
+
+The most crucial phase of every machine learning model is data preprocessing. The performance of the model is significantly influenced by how effectively the raw data was cleaned and preprocessed. Similar to NLP, text processing comes first in this process.
+
+● Lower Casing: Converting a word to lowercase (NLP -> nlp). Words like Book and book mean the same but when not converted to the lower case those two are represented as two different words in the vector space model (resulting in more dimensions).
+
+● Tokenization: It is the process of tokenizing or splitting a string, text into a list of tokens. One can think of a token as parts like a word is a token in a sentence, and a sentence is a token in a paragraph.
+
+● Punctuation Mark Removal: The punctuation removal process will help to treat each text equally. For example, the word data and data! are treated equally after the process of removal of punctuations.
+
+● Stop Word Removal: The idea is simply removing the words that occur commonly across all the documents in the corpus. Typically, articles and pronouns are generally classified as stop words.
+
+● Stemming: This is the process of reducing a word to its word stem that affixes to suffixes and prefixes.
+
+● Lemmatization: This is the process of the grouping together of different forms of the same word and converting words into base or root form.
